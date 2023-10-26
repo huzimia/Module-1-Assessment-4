@@ -1,0 +1,53 @@
+/* Apply some basic styling to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border: 2px solid #009688; /* Bright teal border */
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style table header (the first row) */
+table tr:first-child {
+    background-color: #009688; /* Bright teal background */
+    color: white;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Add alternating row colors for better readability */
+table tr:nth-child(odd) {
+    background-color: #E0F2F1; /* Light teal background */
+}
+
+/* Style the movie titles */
+table td:nth-child(2) {
+    font-weight: bold;
+    color: #FFA500; /* Orange color */
+}
+
+/* Style the box office earnings and year columns */
+table td:nth-child(3),
+table td:nth-child(4) {
+    text-align: right;
+    color: #009688; /* Bright teal color */
+    font-weight: bold;
+}
+
+/* Style the top row (rank 1-5) with a different background color */
+table tr:nth-child(-n+5) {
+    background-color: #ffd700; /* Gold color */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover effect on rows */
+table tr:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
